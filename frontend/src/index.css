@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { @apply text-slate-200 antialiased; font-family: Inter, system-ui, sans-serif; }
+.card { @apply rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-xl shadow-black/30 backdrop-blur; }
+.btn { @apply rounded-xl bg-gradient-to-r from-neon to-violet px-5 py-2.5 font-semibold text-slate-950 shadow-lg shadow-violet/30 transition hover:scale-105 disabled:opacity-50; }
+
+/* ---- mobile / installed-app polish ---- */
+html { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }
+textarea, input { font-size: 16px; } /* 16px stops iOS Safari zooming into the field */
+.safe-top { padding-top: env(safe-area-inset-top); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
